@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/xiaomi.ico">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<title>小米商城 - 红米Note 4x,小米5c,小米MIX,小米笔记本官方网站</title>
+	<!-- <script src="DD_belatedPNG_0.0.8a.js"></script>  -->  <!-- 修复IE6下PNG24位无法显示的问题 -->
+	<script src="js/index.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/tQuery.js"></script>
+	
+	<script>
+
+
+	</script>
+</head>
+<body>
+	<head>
+		<div class="site_nav">
+			<div class="continer clear">
+				<ul class="top_nav fl">
+					<li class="left"><a href="http://www.mi.com/index.html">小米商城</a>|</li>
+					<li><a href="http://www.miui.com/">MIUI</a>|</li>
+					<li><a href="http://www.miliao.com/">米聊</a>|</li>
+					<li><a href="http://game.xiaomi.com/">游戏</a>|</li>
+					<li><a href="http://www.duokan.com/">多看阅读</a>|</li>
+					<li><a href="https://i.mi.com/">云服务</a>|</li>
+					<li><a href="https://jr.mi.com?from=micom">金融</a>|</li>
+					<li><a href="https://www.mi.com/appdownload/">小米商城移动版</a>|</li>
+					<li><a href="https://static.mi.com/feedback/">问题反馈</a>|</li>
+					<li><a href="javascript:;">Select Region</a></li>
+				</ul>
+				<div class="shopping_cart fr" id="shopping_cart">
+					<a href="http://static.mi.com/cart/">
+						<i class="iconfont">&#xe62d;</i>
+						<strong>购物车</strong>
+						<span>(0)</span>
+					</a>
+					<div>购物车中还没有商品，赶紧选购吧！</div>
+				</div>
+				<ul class="top_nav urse_info fr">
+					<li><a href="https://account.xiaomi.com/pass/serviceLogin?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttp%253A%252F%252Fwww.mi.com%252F%26sign%3DNWU4MzRmNjBhZmU4MDRmNmZkYzVjMTZhMGVlMGFmMTllMGY0ZTNhZQ%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180">登陆</a>|</li>
+					<li><a href="https://account.xiaomi.com/pass/register">注册</a>|</li>
+					<li><a href="https://account.xiaomi.com/pass/serviceLogin?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttp%253A%252F%252Forder.mi.com%252Fmessage%252Flist%26sign%3DOGFhMTMxNGEyMGE1NzE1ZWVlMTIyODgwODliMDgzYmYyMjUxYWY4Yg%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180">消息通知</a>|</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header">
+
+			<div class="site_header clear">
+				<div class="header_logo fl">
+					<a href="http://www.mi.com/index.html"><img src="img/logo.jpg" alt="小米官网"></a>
+					<h1>小米官网</h1>
+				</div>
+				<div class="ad">
+					<a class="link-block" href="http://hd.mi.com/x/03021d/index.html" target="_blank"> <img src="img/ad.gif" alt="大艺术家"></a>
+				</div>
+				<div class="header_nav" id="header_nav">
+					<ul>
+						<li><a href="javascript:;">小米手机</a></li>
+						<li><a href="javascript:;">红米</a></li>
+						<li><a href="javascript:;">平板 · 笔记本</a></li>
+						<li><a href="javascript:;">电视</a></li>
+						<li><a href="javascript:;">盒子 · 影音</a></li>
+						<li><a href="javascript:;">路由器</a></li>
+						<li><a href="javascript:;">智能硬件</a></li>
+						<li><a href="javascript:;">服务</a></li>
+						<li><a href="javascript:;">社区</a></li>
+					</ul>
+				</div>
+				<div class="header_search fr" id="header_search">
+					<form id="search_form" action="http://search.mi.com/" method="get">
+						<input class="text fl" type="text">
+						<input class="btn iconfont fl" type="submit" value="&#xe642;">
+					</form>
+					<div class="search-hot-words">
+						<a href="http://www.mi.com/redmi4x/">红米 4X</a>
+						<a href="http://www.mi.com/mitv3s/48/">小米电视3s 48英寸</a>
+					</div>
+					<div class="key_word_list" id="key_word_list">
+						<ul class="result_list"></ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	<!-- 下拉菜单 -->
+		<div class="item-children" id="item-children">		
+			<div class="continer">		
+	            <ul class="children_list clear" id="children_list"></ul>
+	        </div>
+    	</div>
+	<!-- 焦点轮播图/NAV切换	 -->
+		<div class="header-contioner">
+			<div class="CarouselFigure" id="CarouselFigure">
+				<!-- 轮播大图 -->
+				<div class="img_list">
+					<a href="http://item.mi.com/buyphone/mi5s"><img src="img/big_img1.jpg" alt=""></a>
+					<a href="http://www.mi.com/buytv/"><img src="img/big_img2.jpg" alt=""></a>
+					<a href="http://item.mi.com/buyphone/note4/"><img src="img/big_img3.jpg" alt=""></a>
+					<a href="http://item.mi.com/buy/mibookair"><img src="img/big_img4.jpg" alt=""></a>
+					<a href="http://hd.mi.com/x/03011r/index.html"><img src="img/big_img5.jpg" alt=""></a>
+					<span class="left iconfont">&#xe61f;</span>
+					<span class="right iconfont">&#xe643;</span>
+				</div>
+					<!-- 右下角引导小圆圈 -->
+				<div class="ui-pager clear">
+					<ul class="fr clear"></ul>
+				</div>
+			</div>
+					<!-- 导航及子类容 -->
+			<div class="nav_category">
+				<div class="site-category-list">
+					<div></div>
+					<ol id="nav_list">
+						<li><a href="http://www.mi.com/buyphone/"><strong>手机 电话卡</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://www.mi.com/mibookair/"><strong>笔记本 平板</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://www.mi.com/buytv/"><strong>电视 盒子</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://www.mi.com/smart/"><strong>路由器 智能硬件</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/accessories/tag?id=dianyuancunchu"><strong>移动电源 电池 插线板</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/17"><strong>耳机 音箱</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/7"><strong>保护套 贴膜</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/17"><strong>线材 支架 存储卡</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/134"><strong>箱包 服饰</strong><span class="iconfont">&#xe635;</span></a></li>
+						<li><a href="http://list.mi.com/20"><strong>米兔 生活周边</strong><span class="iconfont">&#xe635;</span></a></li>
+					</ol>
+				</div>
+				<div class="children-list" id="children-list">
+					<ul></ul>
+				</div>
+			</div>
+			
+			<div class="home-hero-sub">
+
+			</div>	
+		</div>	
+	</head>
+</body>
+</html>
