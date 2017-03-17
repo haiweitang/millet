@@ -1,4 +1,4 @@
 # millet               
 小米官网模仿
 
-https://github.com/haiweitang/100du/blob/master/100du.html
+http://htmlpreview.github.io/?https://github.com/haiweitang/millet/blob/master/xiaomi.html
