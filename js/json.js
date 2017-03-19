@@ -181,3 +181,15 @@ var childrenNavList=[
 	];
 
 
+var moveList = [
+		{'title':'红米Note 4','str':'超长续航，全金属一体化机身','Price':'1399','src':'img/move-box/1.png','href':'http://item.mi.com/buyphone/note4/'},
+		{'title':'小米电视3s 48英寸','str':'原装液晶屏，金属机身','Price':'2599','src':'img/move-box/2.png','href':'http://item.mi.com/buymitv/48'},
+		{'title':'小米移动电源2','str':'双向快充，高密度锂聚合物电芯','Price':'79','src':'img/move-box/3.png','href':'http://www.mi.com/battery2/'},
+		{'title':'小米手环 2','str':'OLED 显示屏幕，升级计步算法','Price':'149','src':'img/move-box/4.png','href':'http://www.mi.com/shouhuan2/'},
+		{'title':'九号平衡车','str':'年轻人的酷玩具，骑行遥控两种玩法','Price':'1999','src':'img/move-box/5.jpg','href':'http://www.mi.com/scooter/'},
+		{'title':'米家 LED 智能台灯','str':'无可视频闪，亮度色温无级调节','Price':'169','src':'img/move-box/6.jpg','href':'http://www.mi.com/mjsmartlamp/'},
+		{'title':'米家iHealth血压计','str':'爸妈上手就会用的智能血压计','Price':'399','src':'img/move-box/7.png','href':'http://www.mi.com/ihealth2/'},
+		{'title':'小米路由器3','str':'更快更强，不止四天线','Price':'149','src':'img/move-box/8.png','href':'http://www.mi.com/miwifi3/'},
+		{'title':'小米活塞耳机 清新版','str':'铝合金音腔，第三代平衡阻尼系统','Price':'29','src':'img/move-box/9.png','href':'http://www.mi.com/huosai3/'},
+		{'title':'小米体重秤','str':'100克，喝杯水都可感知的精准','Price':'99','src':'img/move-box/10.png','href':'http://www.mi.com/scale/'}
+];

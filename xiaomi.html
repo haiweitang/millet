@@ -6,18 +6,20 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/iconfont/iconfont.css">
 	<title>小米商城 - 红米Note 4x,小米5c,小米MIX,小米笔记本官方网站</title>
-	<!-- <script src="DD_belatedPNG_0.0.8a.js"></script>  -->  <!-- 修复IE6下PNG24位无法显示的问题 -->
 	<script src="js/index.js"></script>
 	<script src="js/json.js"></script>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/tQuery.js"></script>
 	
-	<script>
-
-
-	</script>
+	
 </head>
 <body>
+<!--[if IE 6]> 
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+DD_belatedPNG.fix('*'); 
+</script> 
+<![endif]--> 
 	<head>
 		<div class="site_nav">
 			<div class="continer clear">
@@ -112,7 +114,7 @@
 				</div>
 			</div>
 					<!-- 导航及子类容 -->
-			<div class="nav_category">
+			<nav class="nav_category">
 				<div class="site-category-list">
 					<div></div>
 					<ol id="nav_list">
@@ -131,7 +133,7 @@
 				<div class="children-list" id="children-list">
 					<ul></ul>
 				</div>
-			</div>
+			</nav>
 			
 			<div class="home-hero-sub clear">
 				<div class="assemble fl">
@@ -154,5 +156,24 @@
 			</div>	
 		</div>	
 	</head>
+
+	<section>
+		<div class="move-box">
+			<div class="box-hd">
+				<h2>小米明星单品</h2>
+				<div class="more" id="more">
+					<div>
+						<a class="iconfont" href="javascript:;">&#xe61f;</a>
+						<a class="iconfont next active" href="javascript:;">&#xe643;</a>
+					</div>
+				</div>	
+			</div>
+			<div class="box-bd" id="box-bd">
+				<ul></ul>	
+	
+			</div>
+		</div>
+	</section>
+
 </body>
 </html>
